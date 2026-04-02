@@ -1,0 +1,33 @@
+# 天气获取程序用户配置文件
+# 支持配置1-5个指定城市，定时获取天气数据
+
+# 定时任务配置（分钟级，范围1-1440分钟）
+schedule:
+  interval_minutes: 30  # 每30分钟执行一次
+
+# 目标城市列表（1-5个城市，必须存在于city_white_list.yaml中）
+target_cities:
+  - 北京
+  - 上海
+  - 广州
+  - 深圳
+  - 杭州
+
+# 天气数据获取配置
+weather_api:
+  # 使用wttr.in免费天气API（无需API Key）
+  base_url: "https://wttr.in"
+  timeout_seconds: 10
+  retry_times: 3
+
+# 日志配置
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR
+  max_log_files: 7  # 保留最近7天的日志文件
+
+# 数据存储配置
+storage:
+  # 数据文件保留天数
+  data_retention_days: 30
+  # 报告文件保留天数
+  report_retention_days: 7
