@@ -37,3 +37,42 @@
 2026-04-02 16:18:59 - TaskExecutor - INFO - 天气数据采集任务执行完成
 2026-04-02 16:18:59 - TaskExecutor - INFO - 成功: 5/5 个城市
 2026-04-02 16:18:59 - TaskExecutor - INFO - ==================================================
+2026-04-02 16:25:21 - ConfigLoader - INFO - 成功加载城市白名单，共 48 个城市
+2026-04-02 16:25:21 - ConfigLoader - INFO - 成功加载用户配置文件
+2026-04-02 16:25:21 - ConfigLoader - INFO - 配置校验通过
+2026-04-02 16:25:21 - WeatherApplication - INFO - 日志系统初始化完成
+2026-04-02 16:25:21 - WeatherApplication - INFO - 天气数据处理器初始化完成
+2026-04-02 16:25:21 - WeatherApplication - INFO - 数据存储器初始化完成
+2026-04-02 16:25:21 - WeatherApplication - INFO - 执行单次任务模式
+2026-04-02 16:25:21 - TaskExecutor - INFO - ==================================================
+2026-04-02 16:25:21 - TaskExecutor - INFO - 开始执行天气数据采集任务
+2026-04-02 16:25:21 - TaskExecutor - INFO - ==================================================
+2026-04-02 16:25:21 - TaskExecutor - INFO - 目标城市: ['北京', '上海', '广州', '深圳', '杭州']
+2026-04-02 16:25:21 - TaskExecutor - INFO - 清理过期文件...
+2026-04-02 16:25:21 - TaskExecutor - INFO - 开始获取天气数据...
+2026-04-02 16:25:21 - WeatherDataProcessor - INFO - 开始批量获取 5 个城市的天气数据
+2026-04-02 16:25:21 - WeatherFetcher - INFO - 开始获取城市 '北京' 的天气数据
+2026-04-02 16:25:22 - WeatherFetcher - INFO - 成功获取并校验城市 '北京' 的天气数据
+2026-04-02 16:25:22 - WeatherFetcher - INFO - 开始获取城市 '上海' 的天气数据
+2026-04-02 16:25:23 - WeatherFetcher - INFO - 成功获取并校验城市 '上海' 的天气数据
+2026-04-02 16:25:23 - WeatherFetcher - INFO - 开始获取城市 '广州' 的天气数据
+2026-04-02 16:25:24 - WeatherFetcher - INFO - 成功获取并校验城市 '广州' 的天气数据
+2026-04-02 16:25:24 - WeatherFetcher - INFO - 开始获取城市 '深圳' 的天气数据
+2026-04-02 16:25:26 - WeatherFetcher - INFO - 成功获取并校验城市 '深圳' 的天气数据
+2026-04-02 16:25:26 - WeatherFetcher - INFO - 开始获取城市 '杭州' 的天气数据
+2026-04-02 16:25:27 - WeatherFetcher - INFO - 成功获取并校验城市 '杭州' 的天气数据
+2026-04-02 16:25:27 - WeatherDataProcessor - INFO - 成功获取 5/5 个城市的天气数据
+2026-04-02 16:25:27 - WeatherDataProcessor - INFO - 数据过滤完成: 5/5 条有效
+2026-04-02 16:25:27 - TaskExecutor - INFO - 保存天气数据...
+2026-04-02 16:25:27 - DataSaver - INFO - 天气数据已保存: ./weather/data/weather_北京_20260402_162527.json
+2026-04-02 16:25:27 - DataSaver - INFO - 天气数据已保存: ./weather/data/weather_上海_20260402_162527.json
+2026-04-02 16:25:27 - DataSaver - INFO - 天气数据已保存: ./weather/data/weather_广州_20260402_162527.json
+2026-04-02 16:25:27 - DataSaver - INFO - 天气数据已保存: ./weather/data/weather_深圳_20260402_162527.json
+2026-04-02 16:25:27 - DataSaver - INFO - 天气数据已保存: ./weather/data/weather_杭州_20260402_162527.json
+2026-04-02 16:25:27 - DataSaver - INFO - 批量保存完成: 5/5 条数据
+2026-04-02 16:25:27 - TaskExecutor - INFO - 生成天气报告...
+2026-04-02 16:25:27 - DataSaver - INFO - 天气报告已生成: ./weather/report/weather_report_20260402.md
+2026-04-02 16:25:27 - TaskExecutor - INFO - ==================================================
+2026-04-02 16:25:27 - TaskExecutor - INFO - 天气数据采集任务执行完成
+2026-04-02 16:25:27 - TaskExecutor - INFO - 成功: 5/5 个城市
+2026-04-02 16:25:27 - TaskExecutor - INFO - ==================================================
