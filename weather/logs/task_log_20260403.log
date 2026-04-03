@@ -1,0 +1,150 @@
+2026-04-03 21:08:22 - WeatherApplication - INFO - ==================================================
+2026-04-03 21:08:22 - WeatherApplication - INFO - 天气获取程序启动
+2026-04-03 21:08:22 - WeatherApplication - INFO - ==================================================
+2026-04-03 21:08:22 - ConfigLoader - INFO - 加载城市白名单成功,共20个城市
+2026-04-03 21:08:22 - ConfigLoader - INFO - 应用配置加载并校验成功
+2026-04-03 21:08:22 - WeatherApplication - INFO - 程序初始化完成
+2026-04-03 21:08:22 - WeatherApplication - INFO - 开始定时获取天气,城市: 北京, 上海, 广州
+2026-04-03 21:08:22 - TaskScheduler - INFO - 开始执行第 1 次定时任务
+2026-04-03 21:08:22 - TaskScheduler - INFO - 定时任务启动,间隔 30 分钟
+2026-04-03 21:08:22 - TaskExecutor - INFO - 开始执行天气获取任务,城市: 北京, 上海, 广州
+2026-04-03 21:08:23 - WeatherFetcher - WARNING - 北京天气数据解析失败
+2026-04-03 21:08:23 - TaskExecutor - WARNING - 北京 天气数据获取失败
+2026-04-03 21:08:23 - WeatherFetcher - WARNING - 上海天气数据解析失败
+2026-04-03 21:08:23 - TaskExecutor - WARNING - 上海 天气数据获取失败
+2026-04-03 21:08:24 - WeatherFetcher - WARNING - 广州天气数据解析失败
+2026-04-03 21:08:24 - TaskExecutor - WARNING - 广州 天气数据获取失败
+2026-04-03 21:08:24 - TaskExecutor - INFO - 天气任务执行完成,成功: 0,失败: 3
+2026-04-03 21:08:24 - TaskScheduler - INFO - 第 1 次定时任务执行完成,耗时 1.52 秒
+2026-04-03 21:23:00 - INFO - ==================================================
+2026-04-03 21:23:00 - INFO - 天气定时获取程序启动中...
+2026-04-03 21:23:00 - INFO - ==================================================
+2026-04-03 21:23:00 - INFO - 开始加载并校验配置文件
+2026-04-03 21:23:00 - INFO - 正在加载城市白名单
+2026-04-03 21:23:00 - INFO - 白名单加载成功，共 10 个城市
+2026-04-03 21:23:00 - INFO - 有效配置城市: 北京, 上海, 广州
+2026-04-03 21:23:00 - INFO - 定时任务间隔: 30 分钟
+2026-04-03 21:23:00 - INFO - 配置文件校验通过
+2026-04-03 21:23:00 - INFO - 程序初始化完成
+2026-04-03 21:23:00 - INFO - 运行单次任务模式
+2026-04-03 21:23:00 - INFO - 开始批量获取天气数据，城市数量: 3
+2026-04-03 21:23:00 - INFO - 正在获取 [北京] 的天气数据
+2026-04-03 21:23:00 - WARNING - 获取 [北京] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:23:03 - WARNING - 获取 [北京] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:23:06 - ERROR - 获取 [北京] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:23:06 - WARNING - 跳过无效的城市天气数据: 北京
+2026-04-03 21:23:07 - INFO - 正在获取 [上海] 的天气数据
+2026-04-03 21:23:08 - WARNING - 获取 [上海] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:23:11 - WARNING - 获取 [上海] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:23:13 - ERROR - 获取 [上海] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:23:13 - WARNING - 跳过无效的城市天气数据: 上海
+2026-04-03 21:23:14 - INFO - 正在获取 [广州] 的天气数据
+2026-04-03 21:23:15 - WARNING - 获取 [广州] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:23:18 - WARNING - 获取 [广州] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:23:20 - ERROR - 获取 [广州] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:23:20 - WARNING - 跳过无效的城市天气数据: 广州
+2026-04-03 21:23:21 - INFO - 批量获取完成，成功获取 0/3 个城市的天气数据
+2026-04-03 21:23:21 - ERROR - 没有获取到有效的天气数据
+2026-04-03 21:23:21 - INFO - 单次任务执行完成
+2026-04-03 21:26:32 - INFO - ==================================================
+2026-04-03 21:26:32 - INFO - 天气定时获取程序启动中...
+2026-04-03 21:26:32 - INFO - ==================================================
+2026-04-03 21:26:32 - INFO - 开始加载并校验配置文件
+2026-04-03 21:26:32 - INFO - 正在加载城市白名单
+2026-04-03 21:26:32 - INFO - 白名单加载成功，共 10 个城市
+2026-04-03 21:26:32 - INFO - 有效配置城市: 北京, 上海, 广州
+2026-04-03 21:26:32 - INFO - 定时任务间隔: 30 分钟
+2026-04-03 21:26:32 - INFO - 配置文件校验通过
+2026-04-03 21:26:32 - INFO - 程序初始化完成
+2026-04-03 21:26:32 - INFO - 运行单次任务模式
+2026-04-03 21:26:32 - INFO - 开始批量获取天气数据，城市数量: 3
+2026-04-03 21:26:32 - INFO - 正在获取 [北京] 的天气数据
+2026-04-03 21:26:32 - WARNING - 获取 [北京] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:26:35 - WARNING - 获取 [北京] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:26:38 - ERROR - 获取 [北京] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:26:38 - WARNING - 跳过无效的城市天气数据: 北京
+2026-04-03 21:26:39 - INFO - 正在获取 [上海] 的天气数据
+2026-04-03 21:26:39 - WARNING - 获取 [上海] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:26:42 - WARNING - 获取 [上海] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:26:45 - ERROR - 获取 [上海] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:26:45 - WARNING - 跳过无效的城市天气数据: 上海
+2026-04-03 21:26:46 - INFO - 正在获取 [广州] 的天气数据
+2026-04-03 21:26:46 - WARNING - 获取 [广州] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:26:49 - WARNING - 获取 [广州] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:26:52 - ERROR - 获取 [广州] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:26:52 - WARNING - 跳过无效的城市天气数据: 广州
+2026-04-03 21:26:53 - INFO - 批量获取完成，成功获取 0/3 个城市的天气数据
+2026-04-03 21:26:53 - ERROR - 没有获取到有效的天气数据
+2026-04-03 21:26:53 - INFO - 单次任务执行完成
+2026-04-03 21:27:12 - INFO - ==================================================
+2026-04-03 21:27:12 - INFO - 天气定时获取程序启动中...
+2026-04-03 21:27:12 - INFO - ==================================================
+2026-04-03 21:27:12 - INFO - 开始加载并校验配置文件
+2026-04-03 21:27:12 - INFO - 正在加载城市白名单
+2026-04-03 21:27:12 - INFO - 白名单加载成功，共 10 个城市
+2026-04-03 21:27:12 - INFO - 有效配置城市: 北京, 上海, 广州
+2026-04-03 21:27:12 - INFO - 定时任务间隔: 30 分钟
+2026-04-03 21:27:12 - INFO - 配置文件校验通过
+2026-04-03 21:27:12 - INFO - 程序初始化完成
+2026-04-03 21:27:12 - INFO - 运行单次任务模式
+2026-04-03 21:27:12 - INFO - 开始批量获取天气数据，城市数量: 3
+2026-04-03 21:27:12 - INFO - 正在获取 [北京] 的天气数据
+2026-04-03 21:27:13 - WARNING - 获取 [北京] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:27:15 - WARNING - 获取 [北京] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:27:18 - ERROR - 获取 [北京] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:27:18 - INFO - 使用模拟数据模式获取 [北京] 天气
+2026-04-03 21:27:18 - INFO - [北京] 天气数据获取并清洗成功
+2026-04-03 21:27:19 - INFO - 正在获取 [上海] 的天气数据
+2026-04-03 21:27:20 - WARNING - 获取 [上海] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:27:23 - WARNING - 获取 [上海] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:27:25 - ERROR - 获取 [上海] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:27:25 - INFO - 使用模拟数据模式获取 [上海] 天气
+2026-04-03 21:27:25 - INFO - [上海] 天气数据获取并清洗成功
+2026-04-03 21:27:26 - INFO - 正在获取 [广州] 的天气数据
+2026-04-03 21:27:27 - WARNING - 获取 [广州] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:27:30 - WARNING - 获取 [广州] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:27:33 - ERROR - 获取 [广州] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:27:33 - INFO - 使用模拟数据模式获取 [广州] 天气
+2026-04-03 21:27:33 - INFO - [广州] 天气数据获取并清洗成功
+2026-04-03 21:27:34 - INFO - 批量获取完成，成功获取 3/3 个城市的天气数据
+2026-04-03 21:27:34 - INFO - 开始保存数据并生成报告
+2026-04-03 21:27:34 - INFO - 天气数据已保存到: ./weather/data/weather_20260403_212734.json
+2026-04-03 21:27:34 - INFO - 天气报告已生成: ./weather/report/weather_report_20260403.md
+2026-04-03 21:27:34 - INFO - 数据保存和报告生成均成功
+2026-04-03 21:27:34 - INFO - 单次任务执行完成
+2026-04-03 21:32:05 - INFO - ==================================================
+2026-04-03 21:32:05 - INFO - 天气定时获取程序启动中...
+2026-04-03 21:32:05 - INFO - ==================================================
+2026-04-03 21:32:05 - INFO - 开始加载并校验配置文件
+2026-04-03 21:32:05 - INFO - 正在加载城市白名单
+2026-04-03 21:32:05 - INFO - 白名单加载成功，共 10 个城市
+2026-04-03 21:32:05 - INFO - 有效配置城市: 北京, 上海, 广州
+2026-04-03 21:32:05 - INFO - 定时任务间隔: 30 分钟
+2026-04-03 21:32:05 - INFO - 配置文件校验通过
+2026-04-03 21:32:05 - INFO - 程序初始化完成
+2026-04-03 21:32:05 - INFO - 运行单次任务模式
+2026-04-03 21:32:05 - INFO - 开始批量获取天气数据，城市数量: 3
+2026-04-03 21:32:05 - INFO - 正在获取 [北京] 的天气数据
+2026-04-03 21:32:06 - WARNING - 获取 [北京] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:32:08 - WARNING - 获取 [北京] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:32:11 - ERROR - 获取 [北京] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%8C%97%E4%BA%AC&language=zh-Hans&unit=c
+2026-04-03 21:32:11 - INFO - 使用模拟数据模式获取 [北京] 天气
+2026-04-03 21:32:11 - INFO - [北京] 天气数据获取并清洗成功
+2026-04-03 21:32:12 - INFO - 正在获取 [上海] 的天气数据
+2026-04-03 21:32:13 - WARNING - 获取 [上海] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:32:15 - WARNING - 获取 [上海] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:32:18 - ERROR - 获取 [上海] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E4%B8%8A%E6%B5%B7&language=zh-Hans&unit=c
+2026-04-03 21:32:18 - INFO - 使用模拟数据模式获取 [上海] 天气
+2026-04-03 21:32:18 - INFO - [上海] 天气数据获取并清洗成功
+2026-04-03 21:32:19 - INFO - 正在获取 [广州] 的天气数据
+2026-04-03 21:32:20 - WARNING - 获取 [广州] 天气失败，重试 1/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:32:23 - WARNING - 获取 [广州] 天气失败，重试 2/3: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:32:25 - ERROR - 获取 [广州] 天气失败，已达到最大重试次数: 403 Client Error: Forbidden for url: https://api.seniverse.com/v3/weather/now.json?key=SzgU48shIHc4WRHQv&location=%E5%B9%BF%E5%B7%9E&language=zh-Hans&unit=c
+2026-04-03 21:32:25 - INFO - 使用模拟数据模式获取 [广州] 天气
+2026-04-03 21:32:25 - INFO - [广州] 天气数据获取并清洗成功
+2026-04-03 21:32:26 - INFO - 批量获取完成，成功获取 3/3 个城市的天气数据
+2026-04-03 21:32:26 - INFO - 开始保存数据并生成报告
+2026-04-03 21:32:26 - INFO - 天气数据已保存到: ./weather/data/weather_20260403_213226.json
+2026-04-03 21:32:26 - INFO - 天气报告已生成: ./weather/report/weather_report_20260403.md
+2026-04-03 21:32:26 - INFO - 数据保存和报告生成均成功
+2026-04-03 21:32:26 - INFO - 单次任务执行完成

@@ -1,0 +1,33 @@
+{
+  "generate_time": "2026-04-03 21:27:34",
+  "total_count": 3,
+  "weather_data": [
+    {
+      "city": "北京",
+      "temperature": 32.0,
+      "humidity": 44.0,
+      "weather_condition": "微风",
+      "wind_power": "西南风 1级",
+      "update_time": "2026-04-03 21:27:18",
+      "is_valid": true
+    },
+    {
+      "city": "上海",
+      "temperature": 25.0,
+      "humidity": 36.0,
+      "weather_condition": "微风",
+      "wind_power": "东南风 4级",
+      "update_time": "2026-04-03 21:27:25",
+      "is_valid": true
+    },
+    {
+      "city": "广州",
+      "temperature": 23.0,
+      "humidity": 72.0,
+      "weather_condition": "微风",
+      "wind_power": "南风 3级",
+      "update_time": "2026-04-03 21:27:33",
+      "is_valid": true
+    }
+  ]
+}
