@@ -1,0 +1,12 @@
+cities:
+  - 北京
+  - 上海
+  - 广州
+
+schedule:
+  interval_minutes: 30
+
+api:
+  url: https://restapi.amap.com/v3/weather/weatherInfo
+  key: your_api_key_here
+  timeout: 10
