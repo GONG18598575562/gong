@@ -1,0 +1,9 @@
+cities:
+  - 北京
+  - 上海
+  - 广州
+schedule:
+  interval_minutes: 30
+weather_api:
+  timeout: 10
+  retry_count: 3
