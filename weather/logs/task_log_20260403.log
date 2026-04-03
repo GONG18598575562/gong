@@ -1,0 +1,18 @@
+2026-04-03 21:08:22 - WeatherApplication - INFO - ==================================================
+2026-04-03 21:08:22 - WeatherApplication - INFO - 天气获取程序启动
+2026-04-03 21:08:22 - WeatherApplication - INFO - ==================================================
+2026-04-03 21:08:22 - ConfigLoader - INFO - 加载城市白名单成功,共20个城市
+2026-04-03 21:08:22 - ConfigLoader - INFO - 应用配置加载并校验成功
+2026-04-03 21:08:22 - WeatherApplication - INFO - 程序初始化完成
+2026-04-03 21:08:22 - WeatherApplication - INFO - 开始定时获取天气,城市: 北京, 上海, 广州
+2026-04-03 21:08:22 - TaskScheduler - INFO - 开始执行第 1 次定时任务
+2026-04-03 21:08:22 - TaskScheduler - INFO - 定时任务启动,间隔 30 分钟
+2026-04-03 21:08:22 - TaskExecutor - INFO - 开始执行天气获取任务,城市: 北京, 上海, 广州
+2026-04-03 21:08:23 - WeatherFetcher - WARNING - 北京天气数据解析失败
+2026-04-03 21:08:23 - TaskExecutor - WARNING - 北京 天气数据获取失败
+2026-04-03 21:08:23 - WeatherFetcher - WARNING - 上海天气数据解析失败
+2026-04-03 21:08:23 - TaskExecutor - WARNING - 上海 天气数据获取失败
+2026-04-03 21:08:24 - WeatherFetcher - WARNING - 广州天气数据解析失败
+2026-04-03 21:08:24 - TaskExecutor - WARNING - 广州 天气数据获取失败
+2026-04-03 21:08:24 - TaskExecutor - INFO - 天气任务执行完成,成功: 0,失败: 3
+2026-04-03 21:08:24 - TaskScheduler - INFO - 第 1 次定时任务执行完成,耗时 1.52 秒
